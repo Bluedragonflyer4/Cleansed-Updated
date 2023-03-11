@@ -1,6 +1,8 @@
-res://Player/Scenes/Player.tscn
 res://Ui/Scenes/MainMenu.tscn
 res://World/Scenes/Town.tscn
-res://Ui/Scenes/MagicUI.tscn
+res://Player/Scenes/Player.tscn
 res://Ui/Scenes/HealthUI.tscn
-res://Player/Scripts/Player.gd
+res://Ui/Scenes/MagicUI.tscn
+res://DialogueScript.gd
+res://World/Scenes/Bush.tscn
+res://World/Scripts/Town.gd

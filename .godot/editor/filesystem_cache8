@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1678550184
+::res://::1678550945
 Belladona.gd::GDScript::-1::1677783226::0::1::::<>Node2D<>::
 CHANGELOG.md::TextFile::-1::1672509567::0::1::::<><>::
 default_env.tres::Environment::-1::1677783226::0::1::::<><>::
@@ -8,7 +8,7 @@ DialogueScript.gd::GDScript::-1::1677783226::0::1::::<>Node<>::
 export_presets.cfg::TextFile::-1::1647183556::0::1::::<><>::
 icon.png::CompressedTexture2D::4639175249203982792::1647343935::1677783238::1::::<><>::
 README.md::TextFile::-1::1672509567::0::1::::<><>::
-::res://addons/::1678014520
+::res://addons/::1678550258
 ::res://addons/AsepriteWizard/::1678014502
 plugin.cfg::TextFile::-1::1678014502::0::1::::<><>::
 plugin.gd::GDScript::-1::1678014502::0::1::::<>EditorPlugin<>::
@@ -99,6 +99,13 @@ main_view.gd::GDScript::-1::1678014521::0::1::::<>Control<>::
 main_view.tscn::PackedScene::4884668666408697448::1678014521::0::1::::<><>::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u<>uid://dnufpcdrreva3<>uid://ctns6ouwwd68i<>uid://co8yl23idiwbi<>uid://gr8nakpbrhby<>uid://cs8pwrxr5vxix<>uid://cpg4lg1r3ff6m
 settings_view.gd::GDScript::-1::1678014521::0::1::::<>VBoxContainer<>::
 settings_view.tscn::PackedScene::5839841081119266502::1678014521::0::1::::<><>::res://addons/dialogue_manager/views/settings_view.gd
+::res://addons/godot-git-plugin/::1678550258
+git_plugin.gdextension::GDExtension::-1::1678550258::0::1::::<><>::
+plugin.cfg::TextFile::-1::1678550258::0::1::::<><>::
+THIRDPARTY.md::TextFile::-1::1678550258::0::1::::<><>::
+::res://addons/godot-git-plugin/linux/::1678550258
+::res://addons/godot-git-plugin/macos/::1678550258
+::res://addons/godot-git-plugin/win64/::1678550258
 ::res://Enemies/::1678013459
 Hurtbox.gd::GDScript::-1::1677783228::0::1::::<>Area2D<>::
 PlayerDetectionZone.gd::GDScript::-1::1677783228::0::1::::<>Area2D<>::

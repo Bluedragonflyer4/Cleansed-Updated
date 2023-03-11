@@ -5,6 +5,7 @@ const projectile = preload("res://Player/Scenes/Projectile.tscn")
 var projectiles = 0
 
 func _ready() -> void:
+	$PauseScreen.visible = false
 	$PauseScreen/ResumeButton.visible = false
 	$PauseScreen/Shade.visible = false
 	$PauseScreen/ExitButton.visible = false
@@ -13,6 +14,7 @@ func _ready() -> void:
 func _physics_process(_delta: float) -> void:
 	if Input.get_action_strength("Esc") and $PauseTimer.time_left == 0:
 		get_tree().paused = true
+		$PauseScreen.visible = true
 		$PauseScreen/ResumeButton.visible = true
 		$PauseScreen/Shade.visible = true
 		$PauseScreen/ExitButton.visible = true
