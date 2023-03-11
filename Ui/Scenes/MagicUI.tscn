@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdcu7ocli2x18"]
+
+[ext_resource type="Texture2D" uid="uid://dik10o74wxjk3" path="res://Ui/Textures/MagicBarEmpty.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bcx1g85vbed0g" path="res://Ui/Textures/MagicBarFull.png" id="2"]
+[ext_resource type="Script" path="res://Ui/Scripts/MagicUI.gd" id="3"]
+
+[node name="MagicUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, 0, 0)
+
+[node name="MagicEmpty" type="TextureRect" parent="CanvasLayer"]
+offset_top = 7.0
+offset_right = 60.0
+offset_bottom = 17.0
+texture = ExtResource("1")
+stretch_mode = 2
+
+[node name="MagicFull" type="TextureRect" parent="CanvasLayer"]
+offset_left = 4.0
+offset_top = 11.0
+offset_right = 4.0
+offset_bottom = 14.0
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 2
