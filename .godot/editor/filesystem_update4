@@ -3,6 +3,4 @@ res://World/Scenes/Town.tscn
 res://Player/Scenes/Player.tscn
 res://Ui/Scenes/HealthUI.tscn
 res://Ui/Scenes/MagicUI.tscn
-res://DialogueScript.gd
 res://World/Scenes/Bush.tscn
-res://World/Scripts/Town.gd
