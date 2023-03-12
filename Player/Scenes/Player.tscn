@@ -14,15 +14,19 @@ height = 0.0
 animation = &"Healing"
 
 [sub_resource type="AnimationNodeAnimation" id="48"]
-animation = &"StandDown"
+resource_local_to_scene = true
+animation = &"IdleDown"
 
 [sub_resource type="AnimationNodeAnimation" id="49"]
-animation = &"StandLeft"
+resource_local_to_scene = true
+animation = &"IdleLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="50"]
+resource_local_to_scene = true
 animation = &"IdleUp"
 
 [sub_resource type="AnimationNodeAnimation" id="51"]
+resource_local_to_scene = true
 animation = &"IdleRight"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id="28"]
@@ -40,15 +44,19 @@ blend_mode = 1
 sync = true
 
 [sub_resource type="AnimationNodeAnimation" id="30"]
+resource_local_to_scene = true
 animation = &"RunLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="31"]
+resource_local_to_scene = true
 animation = &"RunDown"
 
 [sub_resource type="AnimationNodeAnimation" id="32"]
+resource_local_to_scene = true
 animation = &"RunRight"
 
 [sub_resource type="AnimationNodeAnimation" id="33"]
+resource_local_to_scene = true
 animation = &"RunUp"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id="29"]
@@ -115,9 +123,9 @@ tracks/0/path = NodePath("ArwenSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.01),
 "transitions": PackedFloat32Array(1),
-"update": 1,
+"update": 0,
 "values": [0]
 }
 tracks/1/type = "value"
@@ -155,9 +163,9 @@ tracks/0/path = NodePath("ArwenSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.01),
 "transitions": PackedFloat32Array(1),
-"update": 1,
+"update": 0,
 "values": [38]
 }
 tracks/1/type = "value"
@@ -239,7 +247,6 @@ tracks/3/keys = {
 [sub_resource type="Animation" id="38"]
 resource_name = "RunDown"
 length = 0.8
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -249,7 +256,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [30, 31, 32, 33, 34, 35, 36, 37]
 }
 tracks/1/type = "value"
@@ -280,7 +287,6 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="39"]
 resource_name = "RunLeft"
 length = 0.75
-loop_mode = 1
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -291,7 +297,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 }
 tracks/1/type = "value"
@@ -322,7 +328,6 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="40"]
 resource_name = "RunRight"
 length = 0.75
-loop_mode = 1
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -333,7 +338,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 }
 tracks/1/type = "value"
@@ -376,17 +381,16 @@ tracks/3/keys = {
 [sub_resource type="Animation" id="43"]
 resource_name = "RunUp"
 length = 0.8
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/path = NodePath("ArwenSprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
+tracks/0/interp = 0
+tracks/0/loop_wrap = false
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [38, 39, 40, 41, 42, 43, 44, 45]
 }
 tracks/1/type = "value"
@@ -414,6 +418,46 @@ tracks/2/keys = {
 "values": [Vector2(-1, -4)]
 }
 
+[sub_resource type="Animation" id="52"]
+resource_name = "StandLeft"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ArwenSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.01),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [15]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hitbox/HitboxCollision:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Hitbox/HitboxCollision:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-21, 8)]
+}
+
 [sub_resource type="Animation" id="53"]
 resource_name = "StandDown"
 length = 0.1
@@ -424,7 +468,7 @@ tracks/0/path = NodePath("ArwenSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.01),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [30]
@@ -454,58 +498,18 @@ tracks/2/keys = {
 "values": [Vector2(-1, 26)]
 }
 
-[sub_resource type="Animation" id="52"]
-resource_name = "StandLeft"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ArwenSprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [15]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Hitbox/HitboxCollision:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Hitbox/HitboxCollision:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-21, 8)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2pt6c"]
 _data = {
 "Healing": SubResource("55"),
+"IdleDown": SubResource("53"),
+"IdleLeft": SubResource("52"),
 "IdleRight": SubResource("47"),
 "IdleUp": SubResource("42"),
 "RESET": SubResource("37"),
 "RunDown": SubResource("38"),
 "RunLeft": SubResource("39"),
 "RunRight": SubResource("40"),
-"RunUp": SubResource("43"),
-"StandDown": SubResource("53"),
-"StandLeft": SubResource("52")
+"RunUp": SubResource("43")
 }
 
 [sub_resource type="CapsuleShape2D" id="36"]
@@ -543,11 +547,12 @@ tree_root = SubResource("22")
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource("23")
-parameters/Idle/blend_position = Vector2(0.00252736, 0.0144104)
+parameters/Idle/blend_position = Vector2(-0.00252736, 0.0240176)
 parameters/Motion/blend_position = Vector2(0.00758219, 0.11048)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "StandDown"
+autoplay = "IdleDown"
+playback_process_mode = 0
 libraries = {
 "": SubResource("AnimationLibrary_2pt6c")
 }
