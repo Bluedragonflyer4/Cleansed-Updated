@@ -4,3 +4,5 @@ res://Player/Scenes/Player.tscn
 res://Ui/Scenes/HealthUI.tscn
 res://Ui/Scenes/MagicUI.tscn
 res://World/Scenes/Bush.tscn
+res://Player/Scripts/ProjectileSingularity.gd
+res://World/Scripts/Town.gd
